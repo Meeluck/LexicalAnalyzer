@@ -45,7 +45,6 @@ namespace LexicalAnalyzer
             }
             throw new Exception("Ошибка при вычислении");
         }
-
         public string GetTree()
         {
             StringBuilder stringBuilder = new StringBuilder();
