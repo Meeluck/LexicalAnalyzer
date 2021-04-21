@@ -7,10 +7,9 @@ namespace LexicalAnalyzer
 {
     public class CalculateValue
     {
-        public string Tree { get; set; }
-        public List<string> Operations { get; set; } = new List<string>();
-        public List<float> Values { get; set; } = new List<float>();
-        public dynamic ComputeValue(dynamic tree) 
+        List<string> Operations { get; set; } = new List<string>();
+        List<float> Values { get; set; } = new List<float>();
+        public float ComputeValue(dynamic tree) 
         {
             if (tree.Item1 == "Plus")
             {
